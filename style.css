@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+* {
+    margin: 0;
+   
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+body {
+    background: #1a1a1a;
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;    
+    gap: 2px;
+    flex-wrap:wrap;
+    overflow: hidden;
+}
+
+
+
+
+section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #ff6392, #ffec64, #4d98ff);
+    animation: animate 7s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+
+section span {
+    
+    display: block;
+    width: calc(6.25vw - 2px);
+    height: calc(6.25vw - 2px);
+    background: #333;
+    z-index: 2;
+    transition: 1.5s;
+}
+
+section span:hover {
+    background: #ff6392;
+    transition: 0s;
+}
+
+.signin {
+    position: absolute;
+    width: 400px;
+    background: #282828;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+}
+
+.signin .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}   
+
+.signin .content h2 {
+    font-size: 1.75em;
+    color: #ffec64;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.signin .content .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.signin .content .form .inputBox {
+    position: relative;
+    width: 100%;
+}
+
+.signin .content .form .inputBox input {
+    width: 90%;
+    background: #444;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+}
+
+
+
+.signin .content .form .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signin .content .form .links a {
+    color: #ffec64;
+    font-size: 0.7em;
+}
+
+.signin .content .form .inputBox input[type="submit"] {
+    background: #ff6392;
+    color: #1a1a1a;
+    cursor: pointer;   
+}
+
