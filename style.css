@@ -107,6 +107,7 @@ section span:hover {
     border: none;
     padding: 15px;
     border-radius: 4px;
+    margin: 5px;
     color: #fff;
     font-size: 1em;
 }
