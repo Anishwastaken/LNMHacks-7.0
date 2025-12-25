@@ -1,0 +1,27 @@
+LNMHacks 7.0 – Login Page
+
+Description
+This project is a responsive and animated login page designed for LNMHacks 7.0.
+It features a modern pixel-style UI, animated background grid, and a centered login form with username and password inputs.
+
+The project is built using pure HTML and CSS, focusing on UI/UX and frontend design aesthetics.
+
+Features
+Animated gradient background
+Interactive hover grid effect
+Centered login form
+Pixel-style font (Press Start 2P)
+Responsive layout
+Clean and modern UI design
+
+Technologies Used
+HTML5
+CSS3
+Google Fonts
+
+How to Run the Project
+Download or clone the repository
+Make sure both files are in the same folder:
+index.html
+style.css
+Open index.html in any modern web browser (Chrome, Edge, Firefox)
